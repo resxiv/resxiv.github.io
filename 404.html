@@ -132,7 +132,7 @@
 
 
 <header>
-  <h2><br><a href="/" class="title" style="border-bottom: none;"><span class="cursor-thick">| </span>Research Summaries</a><br><span style="font-size:14px;">A collection of all the research papers and articles that influenced my thoughts the most.<div>&#9839; articles: <span id="numarticle" style="color:red;"></span></div></span></h2> 
+  <h2><br><a href="/" class="title" style="border-bottom: none;"><span class="cursor-thick">| </span>Research Summaries</a><br><span style="font-size:14px;">A collection of all the research papers and articles that influenced my thoughts the most.<div>&#9839; articles: <span id="numarticle" style="color:red;font-size:12pt;"></span></div></span></h2> 
 <!-- <span style="font-size:calc(0.75rem + 0.2vw);line-height:0.9;">resXiv</span> -->
   <nav><a href="" ></a></nav>
 
@@ -145,7 +145,7 @@
 </article>
 
 
-<span style="margin: auto;font-size:12px;">Last Updated: March 08, 2023</span>
+<span style="margin: auto;font-size:12px;">Last Updated: March 10, 2023</span>
 
 <!--  -->
 	<div style="position: fixed; top: -0.6pt; right:1em; background: white; border: solid black 0.5pt; color: black;" class="no-print">&nbsp; <a href="/" style="color: inherit;">blog <span style="font-weight: 1000; font-size: 15px; color: red;">| </span>research summaries</a> &nbsp; </div>
@@ -247,17 +247,11 @@ function setColorScheme() {
 	let colorScheme = localStorage.getItem("rexivBG");
 	if (colorScheme === "dark") {
 		document.getElementById("checkbox").checked = true;
-		document.body.style.backgroundColor = "#212228";	//dark background
-		document.body.style.opacity = "0.8";
-		document.body.style.backgroundImage = "radial-gradient(#444cf7 0.5px, #212228 0.5px)";
-		document.body.style.backgroundSize = "10px 10px";
+		document.body.style.background = "#212228";	//dark background
 		document.body.style.color = "#ffffff";
 	} else if (colorScheme === "light") {
 		document.getElementById("checkbox").checked = false;
-		document.body.style.backgroundColor = "#F5F5F5"; 	// light background
-		document.body.style.opacity = "0.8";
-		document.body.style.backgroundImage = "radial-gradient(#444cf7 0.5px, #F5F5F5 0.5px)";
-		document.body.style.backgroundSize = "10px 10px";
+		document.body.style.background = "#F5F5F5"; 	// light background
 		document.body.style.color = "#000000";
 	} else {}
 }
@@ -269,17 +263,11 @@ function toggleDarkMode() {
 	var element = document.body;
 	if (toggleSwitch === true){				// dark
 		element.style.color = "#ffffff";
-		element.style.backgroundColor = "#212228";	//dark background
-		element.style.opacity = "0.8";
-		element.style.backgroundImage = "radial-gradient(#444cf7 0.5px, #212228 0.5px)";
-		element.style.backgroundSize = "10px 10px";
+		element.style.background = "#212228";	//dark background
 		localStorage.setItem("rexivBG", "dark");
 	} else if (toggleSwitch === false) {			// light
 		element.style.color = "#000000";
-		element.style.backgroundColor = "#F5F5F5"; 	// light background
-		element.style.opacity = "0.8";
-		element.style.backgroundImage = "radial-gradient(#444cf7 0.5px, #F5F5F5 0.5px)";
-		element.style.backgroundSize = "10px 10px";
+		element.style.background = "#F5F5F5"; 	// light background
 		localStorage.setItem("rexivBG", "light");
 	}
 }

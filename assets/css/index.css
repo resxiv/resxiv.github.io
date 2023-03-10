@@ -184,7 +184,7 @@ a:hover { border-bottom: dotted 1.5px; text-decoration: none; }
 
 @media (min-width: 40em) { body > header, body > article, body > footer { padding: 0.2em calc(40% - 17.5em); } }
 
-body > header { /* background-image: url('../../images/banner.jpg') */ box-shadow: 0 0 0.6em rgba(33, 34, 40, 0.04); border-bottom: 1px solid rgba(139, 140, 143, 0.14); }
+body > header { box-shadow: 0 0 0.6em rgba(33, 34, 40, 0.04); border-bottom: 1px solid rgba(139, 140, 143, 0.14); }
 
 body > footer { box-shadow: 0 0 0.6em rgba(33, 34, 40, 0.04) inset; border-top: 1px solid rgba(139, 140, 143, 0.14); opacity: .9; }
 
